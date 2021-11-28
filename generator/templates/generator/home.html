@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Hi There!</h1>
+
+<h2>You can generate a strong passowrd with this website just select below inputs.</h2>
+
+<form action="{% url 'password' %}">
+
+    <select name="length">
+        {% for i in length %}
+        <option value="{{ i }}">{{ i }} </option>
+        {% endfor %}
+    </select> Password Lenght
+    <br>
+    <input type="checkbox" name="uppercase"> Uppercase
+    <br>
+    <input type="checkbox" name="numbers"> Numbers
+    <br>
+    <input type="checkbox" name="special">Special Characters
+    <br>
+    <input type="submit" value='Generate Password' class='btn btn-primary'>
+
+</form>
+
+
+{% endblock content %}
