@@ -54,7 +54,7 @@ ROOT_URLCONF = 'password_generator.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\Users\PHP\Desktop\PythonLearning\Udemy\Django3\Password_generator\generator\templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
